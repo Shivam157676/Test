@@ -1,14 +1,66 @@
-- name: Sample
-  hosts: localhost
+- name: Hello World Sample
+  hosts: all
   tasks: 
-    - name: This will create my_dirs
-      command: mkdir /tmp/"{{item}}"
-      with_items:
-      - new_dir1
-      - new_dir2
-      - new_dir3
-      - new_dir4
-      - new_dir5
-      - new_dir6
-      - new_dir7
-      - new_dir8
+    - name: Hello Message
+      debug:
+        msg: "Hello World 1"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 2"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 3"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 4"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 5"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 6"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 7"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 8"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 9"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 10"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 11"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 12"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 13"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 14"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 15"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 16"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 17"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 18"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 19"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 20"
+    - name: Hello Message
+      debug:
+        msg: "Hello World 21"
