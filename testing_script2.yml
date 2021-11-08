@@ -1,0 +1,11 @@
+- hosts: localhost
+  gather_facts: true
+  tasks:
+    - name: Sleep for 10 Sec
+      command: sleep 10
+
+    - name: Sleep for 5 Sec
+      command: sleep 5
+
+    - name: Sleep for 2 Sec
+      command: sleep 2
