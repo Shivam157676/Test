@@ -1,27 +1,15 @@
-- name: Hello World Sample
-  hosts: all
+- name: Sample
+  hosts: localhost
   tasks: 
-    - name: Hello Message
-      debug:
-        msg: "Hello World"{{item}}" "
-		with_items:
-		- 1
-		- 2
-		- 3
-		- 4
-		- 5
-		- 6
-		- 7
-		- 8
-		- 9
-		- 10
-		- 11
-		- 12
-		- 13
-		- 14
-		- 15
-		- 16
-		- 17
-		- 18
-		- 19
-		- 20
+    - name: This will create my_dirs
+      command: mkdir /tmp/"{{item}}"
+      with_items:
+      - new_dir1
+      - new_dir2
+      - new_dir3
+      - new_dir4
+      - new_dir5
+      - new_dir6
+      - new_dir7
+      - new_dir8
+	
